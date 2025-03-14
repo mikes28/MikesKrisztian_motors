@@ -43,4 +43,20 @@ internal class Statisztika
         return false;
     }
 
+    public Motor Oldest()
+    {
+        Motor oldest = motors[0];
+        foreach (Motor motor in motors)
+        {
+            if (motor.ReleaseYear < oldest.ReleaseYear)
+            {
+                oldest = motor;
+            }
+        }
+        return oldest;
+    }
+
+
+
+
 }
