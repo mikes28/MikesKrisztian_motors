@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("motors")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+429d8bc54453742ccf2dfe8ea889b082a67314c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce75b092ec52973dd204f37d1e7e14ffaa4260be")]
 [assembly: System.Reflection.AssemblyProductAttribute("motors")]
 [assembly: System.Reflection.AssemblyTitleAttribute("motors")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

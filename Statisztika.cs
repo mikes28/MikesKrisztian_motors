@@ -8,7 +8,8 @@ internal class Statisztika
     public void ReadFromFile(string fileName)
     {
         string[] lines = File.ReadAllLines(fileName);
-        foreach (string line in lines)
+
+        foreach (string line in lines.Skip(1))
         {
             string[] parts = line.Split(';');
             string brand = parts[0];
