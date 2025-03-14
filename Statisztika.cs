@@ -21,7 +21,15 @@ internal class Statisztika
         }
     }
 
-   
+    public int SumPrices()
+    {
+        double sum = 0;
+        foreach (Motor motor in motors)
+        {
+            sum += motor.PriceInEur;
+        }
+        return Convert.ToInt32(sum);
+    }
 
 
 }
