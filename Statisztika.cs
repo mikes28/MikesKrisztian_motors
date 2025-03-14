@@ -13,7 +13,7 @@ internal class Statisztika
             string[] parts = line.Split(';');
             string brand = parts[0];
             string name = parts[1];
-            int releaseYear = int.Parse(parts[2]);
+            int releaseYear = Convert.ToInt32(parts[2]);
             double performance = double.Parse(parts[3]);
             double priceInEur = double.Parse(parts[4]);
             Motor motor = new Motor(brand, name, releaseYear, performance, priceInEur);
