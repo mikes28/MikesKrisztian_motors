@@ -31,5 +31,16 @@ internal class Statisztika
         return Convert.ToInt32(sum);
     }
 
+    public bool Contains(string motorName)
+    {
+        foreach (Motor motor in motors)
+        {
+            if (motor.Name == motorName)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
 }
