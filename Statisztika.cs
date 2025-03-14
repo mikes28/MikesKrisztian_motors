@@ -57,6 +57,23 @@ internal class Statisztika
     }
 
 
+    public int SumBasedOnBrand(string brandName)
+    {
+        double sum = 0;
+        foreach (Motor motor in motors)
+        {
+            if (motor.Brand == brandName)
+            {
+                sum += motor.PriceInEur;
+            }
+        }
+        return Convert.ToInt32(sum);
+    }
 
 
+
+    public void Sort()
+    {
+        motors.Sort((x, y) => x.PriceInEur.CompareTo(y.PriceInEur));
+    }
 }
